@@ -16,6 +16,7 @@ padding_type='post'
 oov_tok='<OOV>'
 training_size=2000
 
+#Reading Json file
 with open(r'D:\Python Code\NLP_Using_TensorFlow\Sarcasm_Headlines_Dataset.json','r') as f:
     data = json.loads("[" + f.read().replace("}\n{", "},\n{") + "]")# in json file data was not in list for that '[' ']' at the start and at the end and also adding comma after } in the file
 
